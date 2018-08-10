@@ -8,6 +8,7 @@
 * [Included myself in the Uploaders list for the package](https://salsa.debian.org/r_chandramouli-guest/android-platform-external-libselinux/commit/6a2e029933f50e22049d96446e7cfa130eb1852c#58ef006ab62b83b4bec5d81fe5b32c3b4c2d1cc2)
 * [Updated rules file](https://salsa.debian.org/r_chandramouli-guest/android-platform-external-libselinux/commit/6a2e029933f50e22049d96446e7cfa130eb1852c#8756c63497c8dc39f7773438edf53b220c773f67)
 ***
+---
 # [Android-platform-external-boringssl](https://salsa.debian.org/r_chandramouli-guest/android-platform-external-boringssl)	
 * [New Package boringssl has been uploaded to replace openssl to include only binaries required by AOSP](https://salsa.debian.org/r_chandramouli-guest/android-platform-external-boringssl)
 * [Updated boringssl install file](https://salsa.debian.org/r_chandramouli-guest/android-platform-external-boringssl/commit/37485f76ca74c196bdac69680bba64af6551712d#5351a44a0faaf983f656ec1d5dd3adc8f03a4ddd)
@@ -20,6 +21,7 @@
 * [Updated control to update all build dependencies](https://salsa.debian.org/r_chandramouli-guest/android-platform-external-boringssl/commit/3e5286e3eefc37bf6ddf88c88c8c10d4cbac285b#78fd675df1cf8c2d4c62ae1a9a912d15c8c50ba4) 
 * [Updated copyright files to include updated files and exclude outdated information](https://salsa.debian.org/r_chandramouli-guest/android-platform-external-boringssl/commit/3e5286e3eefc37bf6ddf88c88c8c10d4cbac285b#adb7f75f79e3bb85eb62912a2904c5d24af878fb)
 * [Removed lintian warnings and reduced it to minimum](https://salsa.debian.org/r_chandramouli-guest/android-platform-external-boringssl/commit/3e5286e3eefc37bf6ddf88c88c8c10d4cbac285b)
+***
 ---
 # [Android-platform-system-core](https://salsa.debian.org/r_chandramouli-guest/android-platform-system-core)
 * [Updated libadb install to include changes](https://salsa.debian.org/r_chandramouli-guest/android-platform-system-core/commit/0d44234489c723d72ad9a152fce1c067ebff1e9a)
