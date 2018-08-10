@@ -1,5 +1,7 @@
 # Final-GSoC-Report
+---
 ## GSoC report of Chandramouli Rajagopalan under Debian Android Tools
+***
 ---
 # [Android-platfrom-external-libselinux](https://salsa.debian.org/r_chandramouli-guest/android-platform-external-libselinux)
 * [Update selinux to libselinux from AOSP to new upstream version 8.1.0+r23](https://salsa.debian.org/r_chandramouli-guest/android-platform-external-libselinux)
