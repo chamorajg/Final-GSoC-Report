@@ -4,6 +4,57 @@
 ## GSoC report of Chandramouli Rajagopalan under Debian Android Tools
 ***
 ---
+# Final GSoC Report Summary :-
+This GSoC report  contains the summary of all the work I did during the past three months. First of all I would like to thank the Debian community , my mentors and Google for giving me this wonderful opportunity. Diving further into the project , I have started my project by updating packages which were of Stage 1(Packages were divided into four stages based on their requirement by other packages.) and then developing a parser that helps build makefiles for packaging and then updating other required packages.
+You can always find me on #debian-mobile as chandramouli_r(through matrix) and on #debian-java with the same username mentioned above.
+My gitlab account is https://salsa.debian.org/r_chandramouli-guest. You can find all my activities and forks of project that I have undertaken.
+***
+---
+# Open Source - Software , GSoC and Debian :-
+I would like to give a small description about open source and how it actually changed the  way I code. Open source software is a free distributed software where the owner of the software grants permission to change and distribute the software to anyone for any purpose. I got to know about open source software and contributing to open source when I applied for GSoC 2017. I got rejected last year and wanted to contribute again under the
+same platform this year. I completed small tasks that were mentioned in the project page as an assignment to evaluate students before selecting the students. I would like to give Google the credit for this program as it has given all the students a chance to contribute to open source and to work under mentors who are highly qualified and for providing us this wonderful three months. I would want them to continue this initiative as it would help students understand how things work in reality.  And finally Debian, working with Debian environment and learning to package software has been great. I have been using Ubuntu from the past 3-4 years so I find Linux environment the best place for open source. Since Ubuntu being a Debian based distro where the packaging style is similar, I thought of contributing to Debian under Android-Tools as I was more familiar with android environment and the coding languages used. Talking about Debian environment, Debian mentors and the organisation has been the best and the people at debian have been receiving contributors in the best way possible. I would like to give the credit for my work to all the three mentors who have supported me from the beginning and patiently bearing with me throughout. Hans-Christoph-Steiner,Kai-Chung-Yan and Chirayu Desai you people have been the best and guided us so well to come up to this stage. I believe interaction with mentors is the most important aspect of GSoC where students get to learn work and contribute to the open source environment. Hans-Christoph-Steiner , Kai-
+Chung-Yun and Chirayu Desai you guys deserve a big cheer for you work towards Debian. You guys have inspired us to keep contributing inspite of GSoC getting over.
+***
+---
+# Android-Tools and My Work :-
+I have started my work with packaging Stage 1 components (Android-platform-external-libselinux) . The packages have been divided into 4 sub categories such that the higher levels depend on the lower ones for updating. So we started out work with stage 1 components. After updating Android-platform-external-libselinux I started my work on Android-parser which parses .bp file to create makefiles by using blueprint convertor.Our mentors have figured out a way to update the package in a planned manner inorder to reduce the dependancy issues that might arise.
+* Stage 1
+  * android-framework-$apilevel
+  * android-platform-external-jsilver (Usually no update needed)
+  * android-platform-external-libselinux (should be switched to android-platform-external-selinux from 8.0 release)
+  * android-platform-external-libunwind
+  * android-platform-frameworks-data-binding
+  * android-platform-frameworks-native
+  * android-platform-libcore
+  * android-platform-tools-analytics-library
+* Stage 2
+  * android-platform-external-doclava
+  * android-platform-system-core~stage1
+  * android-platform-tools-base
+* Stage 3
+  * android-platform-development
+  * android-platform-frameworks-base
+  * android-platform-libnativehelper
+  * android-platform-system-extras
+  * android-platform-system-tools-aidl
+* Stage 4
+  * android-platform-build
+  * android-platform-dalvik
+  * android-platform-system-core
+* android-platform-dalvik (Needs android.jar of the latest API Level)
+
+Then I got to update more packages like libscout , apktools and dummydroid. We introduced a new package android-platform-external-boringssl which is a part of OpenSSL but contains only files required by all the remaining android-* packages. And after that I continued my work on updating android-platform-libnativehelper, android-platfrom-system-core, and adding CI Tests to android-platform-libcore and finally dummydroid.
+* Commits that have been merged :- 
+ 1. Android-platform-external-libselinux
+ 2. Android-platform-external-boringssl
+* Commits yet to be merged :-
+ 3. Android-platform-system-core
+ 4. Android-platform-libnativehelper
+ 5. Android-platform-libcore
+ 6. dummydroid
+ 7. libscout
+***
+---
 # [Android-platfrom-external-libselinux](https://salsa.debian.org/r_chandramouli-guest/android-platform-external-libselinux)
 * [Update selinux to libselinux from AOSP to new upstream version 8.1.0+r23](https://salsa.debian.org/r_chandramouli-guest/android-platform-external-libselinux)
 * [Updated makefile in libselinux](https://salsa.debian.org/r_chandramouli-guest/android-platform-external-libselinux/commit/6a2e029933f50e22049d96446e7cfa130eb1852c#71c7a7875a21c214a3cd22172642c6e627918ae4)
@@ -105,4 +156,14 @@
 * [My GSoC weekly report for week 10](https://lists.debian.org/debian-outreach/2018/07/msg00084.html)
 * [My GSoC weekly report for week 11](https://lists.debian.org/debian-outreach/2018/07/msg00109.html)
 * [My GSoC weekly report for week 12](https://lists.debian.org/debian-outreach/2018/08/msg00056.html)
+***
+---
+# Current Work and Future Contributions :-
+I am now currently working on android-platform-frameworks-compile where my mentors have suggested me to divide the package into two :-
+1.android-platform-frameworks-compile-libbcc
+2.android-platform-frameworks-compile-slang
+So I am now working on resolving the circular dependency between the two and updating them simulataneously. I currently have Job placement exams going on in my university from the past one week , So I couldn’t focus more towards my work as I was preparing for it. I have reported this issue to my mentors. As soon as the exams get over I would like to complete frameworks-compile and all the remaining packages to be packaged before finally updating to android version P. I would like to contribute to debian irrespective of this program. I would like to continue my work with debian for a long time from now. 
+Thank You GSoC for this opportunity and Thank you mentors (Kai-Chung-Yun, Hans-Christoph-Steiner and Chirayu Desai) and Thanks Debian for this wonderful three months.
+
+# Happy Open Sourcing :)
 ***
